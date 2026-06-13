@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-paper text-ink font-sans antialiased;
+    overflow-x: hidden;
+  }
+  ::selection {
+    @apply bg-cyan-500 text-white;
+  }
+}
+
+@layer components {
+  .container-pro {
+    @apply mx-auto w-full max-w-7xl px-5 sm:px-8;
+  }
+  .section-pad {
+    @apply py-14 sm:py-20;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl px-6 py-3.5 text-sm font-semibold transition-all duration-300 focus:outline-none focus-visible:ring-4;
+  }
+  .btn-cyan {
+    @apply btn bg-cyan-gradient text-white shadow-glow hover:-translate-y-0.5 hover:brightness-105 focus-visible:ring-cyan-200;
+  }
+  .btn-brand {
+    @apply btn bg-brand-gradient text-white shadow-soft hover:-translate-y-0.5 hover:brightness-110 focus-visible:ring-brand-200;
+  }
+  .btn-outline {
+    @apply btn border-2 border-brand-500 text-brand-600 hover:bg-brand-500 hover:text-white focus-visible:ring-brand-100;
+  }
+  .eyebrow {
+    @apply inline-block text-xs font-bold uppercase tracking-[0.18em] text-cyan-600;
+  }
+  /* Tarjeta con perspectiva 3D (efecto tilt) */
+  .card-3d {
+    transform-style: preserve-3d;
+    transform: perspective(900px);
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #ecedf7;
+}
+::-webkit-scrollbar-thumb {
+  background: #2e318e;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #141b4d;
+}
