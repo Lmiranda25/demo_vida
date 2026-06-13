@@ -39,7 +39,7 @@ export default function Navbar() {
               solid ? 'bg-transparent p-0' : 'bg-white px-3 py-2 shadow-sm'
             }`}
           >
-            <img src={reciclada('logo.svg')} alt="Vida — Laboratorios y Policlínicos" className="h-9 w-auto sm:h-11" />
+            <img src={reciclada('logo.png')} alt="Vida — Laboratorios y Policlínicos" className="h-9 w-auto sm:h-11" />
           </span>
         </Link>
 

@@ -59,7 +59,7 @@ export default function Portal() {
                   <Lock className="h-6 w-6" />
                 </div>
                 <div>
-                  <img src={reciclada('logo.svg')} alt="Vida" className="h-8 w-auto" />
+                  <img src={reciclada('logo.png')} alt="Vida" className="h-9 w-auto" />
                 </div>
               </div>
               <h1 className="mt-5 font-display text-2xl font-bold text-brand-800">Portal del paciente</h1>

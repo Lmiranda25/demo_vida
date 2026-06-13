@@ -16,7 +16,7 @@ export default function Footer() {
       <div className="container-pro grid gap-10 py-12 sm:grid-cols-2 lg:grid-cols-4">
         <div>
           <div className="inline-flex rounded-xl bg-white px-4 py-3">
-            <img src={reciclada('logo.svg')} alt="Vida — Laboratorios y Policlínicos" className="h-11 w-auto" />
+            <img src={reciclada('logo.png')} alt="Vida — Laboratorios y Policlínicos" className="h-11 w-auto" />
           </div>
           <p className="mt-4 max-w-xs text-sm leading-relaxed text-brand-50/80">
             Sociedad Americana de laboratorios y policlínicos. Cuidamos tu vida con análisis confiables y resultados en línea.
